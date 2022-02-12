@@ -1,10 +1,10 @@
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/enzoserafin/mobile-TodoApp?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/enzoserafin/Custom-Delivery-Food?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/enzoserafin/mobile-TodoApp">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/enzoserafin/Custom-Delivery-Food">
 
-  <a href="https://github.com/enzoserafin/mobile-TodoApp/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/enzoserafin/mobile-TodoApp">
+  <a href="https://github.com/enzoserafin/Custom-Delivery-Food/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/enzoserafin/custom-delivery-food">
   </a>
 
   <a href="https://github.com/enzoserafin">
@@ -13,7 +13,7 @@
 </p>
 
 <h1 align="center">
-    Mobile Todo App
+    Custom Delivery Food
 </h1>
 
 <p align="center">
@@ -28,64 +28,54 @@
 
 ## 💻 Sobre o projeto
 
-O Todo App é uma aplicação desenvolvida para organizar suas tarefas a fazer, podendo ser utilizado tanto na versão web quanto na versão mobile.
+Projeto desenvolvido através do evento [Dart Week - Academia do Flutter](http://academiadoflutter.com.br/).
 
-
-Projeto desenvolvido através do curso [Projet Completo - Udemy](https://www.udemy.com/course/projeto-completo-xd-nodejs-mongodb-react-native-e-react/).
-Esse curso faz parte do projeto de perfil de formação.
+O aplicativo oferece a lanchonetes e restaurantes a oportunidade de catalogar e vender seus produtos via pix.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- [x] Os usuários podem cadastrar suas tarefas na plataforma web ou mobile:
-  - [x] Selecionanto o tipo da tarefa;
-  - [x] Escolhendo um título;
-  - [x] Colocando uma descrição;
-  - [x] Definir uma data/hora;
-  - [x] Além de criar as tarefas é possível:
-    - Editar
-    - Marcar como tarefa concluída
-    - Excluir tarefa
-
+- [x] Os usuários podem se cadastrar e efetuar compras através do aplicativo:
+  - [x] Vizualização de items no carrinho;
+  - [x] QRCode para pagamento com pix;
+  - [x] Copiar e cola pix;
+  
 ---
 
 ## 🚀 Como executar o projeto
 
-Este projeto é divido em três partes:
-1. Backend
-2. Frontend
-3. Mobile
-
-Neste respositório há somente o Mobile
-
-💡Tanto o Frontend quanto o Mobile precisam que o Backend esteja sendo executado para funcionar.
-
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Docker](https://www.docker.com/) ou [Mongo DB](https://www.mongodb.com/try/download/community).
+[Git](https://git-scm.com), [SDK do Flutter](https://docs.flutter.dev/get-started/install),
+[Gerenciados de versões do Flutter - fvm](https://fvm.app/),
+[Android Studio e SDK Android](developer.android.com/studio).
+
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-#### 🎲 Rodando o Backend (servidor)
+#### 🎲 Rodando o App
 
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:enzoserafin/mobile-TodoApp.git
+$ git clone https://github.com/enzoserafin/Custom-Delivery-Food.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd mobile
+$ cd custom_delivery_food
+
+# Aponte para a versão xxxx fo Flutter
+$ fvm use 2.8.1
 
 # Instale as dependências
-$ npm install
+$ flutter package get
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm start
+$ flutter run
 
 ```
-Será aberta uma aba no navegador padrão com o dashboard do expo. 
-O aplicativo pode rodar no emulador de sua preferência ou no seu device físco, sendo nescessário baixar o app expo e ler o QRCODE no dashboard do expo.
+
+O aplicativo deve rodar em um emulador ou no device físco Android.
 
 ---
 
@@ -93,16 +83,16 @@ O aplicativo pode rodar no emulador de sua preferência ou no seu device físco,
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Mobile**  ([React Native](https://reactnative.dev/))
+#### **Mobile**  ([Flutter](https://flutter.dev/))
 
--   **[Axios](https://github.com/axios/axios)**
--   **[Date-fns](https://www.npmjs.com/package/date-fns)**
--   **[Expo](https://expo.io/)**
--   **[datetimepicker](https://github.com/react-native-datetimepicker/datetimepicker)**
+-   **[Get](https://pub.dev/packages/get)**
+-   **[Get-Storage](https://pub.dev/packages/get_storage)**
+-   **[Validatorless](https://pub.dev/packages/validatorless)**
+-   **[intl](https://pub.dev/packages/intl)**
 
-> Veja o arquivo  [package.json](https://github.com/enzoserafin/mobile-TodoApp/blob/main/package.json)
+> Veja o arquivo  [pubspec.yaml](https://github.com/enzoserafin/Custom-Delivery-Food/blob/master/pubspec.yaml)
 
-#### [](https://github.com/enzoserafin/mobile-TodoApp)**Utilitários**
+**Utilitários**
 
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 
